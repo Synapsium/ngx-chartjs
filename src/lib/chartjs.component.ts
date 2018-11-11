@@ -3,12 +3,12 @@ import { Chart, ChartConfiguration, ChartData, ChartLegendOptions, ChartOptions,
 import { ChartjsConfig, CHARTJS_CONFIG, DEFAULT_OPTIONS_CONFIG } from './chartjs.config';
 
 @Component({
-  selector: 'ngx-chartjs',
+  selector: 'chartjs',
   templateUrl: './chartjs.component.html',
   styleUrls: ['./chartjs.component.scss']
 })
 export class ChartjsComponent implements OnInit, AfterViewInit, OnChanges {
-  @Input() className: string;
+  @Input() className: string = 'canvas-container';
   @Input() type: ChartType | string = 'doughnut';
   @Input() data: ChartData | any;
   @Input() options: ChartOptions;
@@ -51,7 +51,7 @@ export class ChartjsComponent implements OnInit, AfterViewInit, OnChanges {
       this._instance.destroy();
     }
 
-    const configuration: ChartConfiguration = { type: this.type, data: this.data };
+    const configuration: ChartConfiguration = { type: this.type, data: this.data, options: {} };
     this._initOptions(configuration.options);
 
     this.zone.runOutsideAngular(() => {
@@ -63,7 +63,7 @@ export class ChartjsComponent implements OnInit, AfterViewInit, OnChanges {
     Object.assign(options, DEFAULT_OPTIONS_CONFIG);
 
     if(this.CHARTJS_CONFIG){
-      Object.assign(options, this.CHARTJS_CONFIG);
+      Object.assign(options, this.CHARTJS_CONFIG.options);
     }
 
     Object.assign(options, this.options);
