@@ -6,6 +6,9 @@
   },
   "whitelistedNonPeerDependencies": [
     "angular",
-    "chart.js"
+    "chart.js",
+    "core-js",
+    "rxjs",
+    "zone.js"
   ]
 }
