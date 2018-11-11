@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "src",
   "projects": {
-    "ngx-chartjs": {
-      "root": "",
-      "sourceRoot": "src",
+    "demo": {
+      "root": "demo",
+      "sourceRoot": "demo/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -18,16 +18,16 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/ngx-chartjs",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "index": "demo/src/index.html",
+            "main": "demo/src/main.ts",
+            "polyfills": "demo/src/polyfills.ts",
+            "tsConfig": "demo/src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "demo/src/favicon.ico",
+              "demo/src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "demo/src/styles.scss"
             ],
             "scripts": []
           },
@@ -35,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "demo/src/environments/environment.ts",
+                  "with": "demo/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -106,8 +106,8 @@
         }
       }
     },
-    "ngx-chartjs-e2e": {
-      "root": "e2e/",
+    "demo-e2e": {
+      "root": "demo/e2e/",
       "projectType": "application",
       "prefix": "",
       "architect": {
@@ -133,7 +133,42 @@
           }
         }
       }
+    },
+    "chartjs": {
+      "root": "src/chartjs",
+      "sourceRoot": "src/chartjs/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "src/chartjs/tsconfig.lib.json",
+            "project": "src/chartjs/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/chartjs/src/test.ts",
+            "tsConfig": "src/chartjs/tsconfig.spec.json",
+            "karmaConfig": "src/chartjs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/chartjs/tsconfig.lib.json",
+              "src/chartjs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "ngx-chartjs"
+  "defaultProject": "demo"
 }
