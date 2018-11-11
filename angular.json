@@ -134,7 +134,7 @@
         }
       }
     },
-    "chartjs": {
+    "ngx-chartjs": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "library",
