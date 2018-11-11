@@ -3,5 +3,9 @@
   "dest": "./dist/chartjs",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "angular",
+    "chart.js"
+  ]
 }
