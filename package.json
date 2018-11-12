@@ -1,6 +1,6 @@
 {
   "name": "@synapsium/ngx-chartjs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Angular wrapper library for beautiful charts based on Chartjs",
   "author": "https://github.com/synapsium/ngx-chartjs/graphs/contributors",
   "license": "MIT",
