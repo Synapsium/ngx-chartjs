@@ -106,34 +106,6 @@
         }
       }
     },
-    "demo-e2e": {
-      "root": "demo/e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "demo/e2e/protractor.conf.js",
-            "devServerTarget": "ngx-chartjs:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngx-chartjs:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "demo/e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "ngx-chartjs": {
       "root": "",
       "sourceRoot": "src",
