@@ -48,6 +48,29 @@ const DEFAULT_CHARTJS_CONFIG: ChartjsConfig = {
 })
 ```
 
+Check out the <a href="https://www.chartjs.org/docs/latest/">API Doc</a> for the available options.
+
+
+## How to use
+
+In your target component integrate chartjs element :
+```html
+<chartjs [className]="chart" 
+         [type]="type" 
+         [data]="data" 
+         [options]="options">
+</chartjs>
+```
+### Inputs
+
+| Input             | Type                           | Default           | Description                                                       |
+| ----------------- | ------------------------------ | ----------------- | -----------------------------------------------------------------------------------------------------------------------------------------    |
+| className         | `string`                       |                   | Custom css class name applied on parent container of chart canvas |
+| type              | `string`                       | `'doughnut'`      | Type of chart : `'doughnut'`, `'line'`, `'bar'`, `'radar'`, `'pie'`, `'polarArea'`, `'bubble'`, `'scatter'` |
+| data           | `ChartData`                         | `'{}'`             | <a href="https://www.chartjs.org/docs/latest/getting-started/usage.html">Data of chart</a>                                                                                                              |
+| options   | `ChartOptions`                         | `{ responsive: true, maintainAspectRatio: false}`              | <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/chart.js/index.d.ts">Options of chart</a>                                                                                            |
+
+
 
 
 
