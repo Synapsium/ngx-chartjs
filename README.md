@@ -70,7 +70,7 @@ In your target component integrate chartjs element :
 | data           | `ChartData`                         | `'{}'`             | <a href="https://www.chartjs.org/docs/latest/getting-started/usage.html">Data of chart</a>                                                                                                              |
 | options   | `ChartOptions`                         | `{ responsive: true, maintainAspectRatio: false}`              | <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/chart.js/index.d.ts">Options of chart</a>                                                                                            |
 
-
+> `Options` properties of global config will be replaced by local `Options`.
 
 
 
