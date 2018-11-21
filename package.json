@@ -1,6 +1,6 @@
 {
   "name": "@synapsium/ngx-chartjs",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Angular wrapper library for beautiful charts based on Chartjs",
   "author": "https://github.com/synapsium/ngx-chartjs/graphs/contributors",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "npmpublish": "npm run build ngx-chartjs && cd ./dist/@synapsium/ngx-chartjs && npm publish --access public"
   },
   "dependencies": {
     "@angular/animations": "~7.0.0",

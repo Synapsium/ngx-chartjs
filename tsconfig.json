@@ -19,10 +19,16 @@
     ],
     "paths": {
       "ngx-chartjs": [
-        "dist/ngx-chartjs"
+        "dist/@synapsium/ngx-chartjs"
       ],
       "ngx-chartjs/*": [
-        "dist/ngx-chartjs/*"
+        "dist/@synapsium/ngx-chartjs/*"
+      ],
+      "ngx-chartjs-dev": [
+        "src"
+      ],
+      "ngx-chartjs-dev/*": [
+        "src/*"
       ]
     }
   }

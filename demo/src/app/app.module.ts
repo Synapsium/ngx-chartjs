@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ChartjsModule, ChartjsConfig, CHARTJS_CONFIG } from '../../../src';
+import { ChartjsModule, ChartjsConfig, CHARTJS_CONFIG } from 'ngx-chartjs-dev';
 
 const DEFAULT_CHARTJS_CONFIG: ChartjsConfig = {
   options: {
