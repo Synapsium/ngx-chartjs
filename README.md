@@ -37,7 +37,7 @@ const DEFAULT_CHARTJS_CONFIG: ChartjsConfig = {
   ...
   imports: [
     ...
-    SwiperModule
+    ChartjsModule
   ],
   providers: [
     {
