@@ -1,7 +1,9 @@
-<a href="http://synapsium.com">
-    <img height="200px" width="200px" src="https://www.chartjs.org/img/chartjs-logo.svg">
+<p align="center">
+  <img height="200px" width="200px"  src="https://cdn.rawgit.com/MurhafSousli/ngx-scrollbar/ee4c0ba4/src/assets/logo.svg">
+  <a href="http://synapsium.com">
     <h1 align="center">ngx-chartjs</h1>
-</a>
+  </a>
+</p>
 
 <p align="center">
 Quickly way to integrate <a href="https://www.chartjs.org">Chart.js</a> components with <a href="https://angular.io/">Angular</a>
