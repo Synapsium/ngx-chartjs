@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="200px" width="200px"  src="https://cdn.rawgit.com/MurhafSousli/ngx-scrollbar/ee4c0ba4/src/assets/logo.svg">
+  <img height="200px" width="200px"  src="https://www.chartjs.org/img/chartjs-logo.svg">
   <a href="http://synapsium.com">
     <h1 align="center">ngx-chartjs</h1>
   </a>
