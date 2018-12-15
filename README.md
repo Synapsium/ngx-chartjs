@@ -1,3 +1,4 @@
+<img height="200px" width="200px" style="text-align: center;" src="https://www.chartjs.org/img/chartjs-logo.svg">
 <a href="http://synapsium.com">
     <h1 align="center">ngx-chartjs</h1>
 </a>
