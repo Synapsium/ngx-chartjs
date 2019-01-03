@@ -7,7 +7,7 @@ import { ChartjsConfig, CHARTJS_CONFIG, DEFAULT_OPTIONS_CONFIG } from './chartjs
   templateUrl: './chartjs.component.html',
   styleUrls: ['./chartjs.component.scss']
 })
-export class ChartjsComponent implements OnInit, AfterViewInit, OnChanges {
+export class ChartjsComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
   @Input() className: string = 'canvas-container';
   @Input() type: ChartType | string = 'doughnut';
   @Input() data: ChartData | any;
