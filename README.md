@@ -17,11 +17,18 @@ One of the most popular and powerful open source library to create a  data visua
 
 ### Installation
 
-Install `ngx-chartjs` library from `npm`
+Install `chart.js` and `ngx-chartjs` library from `npm`
 
 ```bash
-npm install @synapsium/ngx-chartjs --save
+npm install chart.js @synapsium/ngx-chartjs --save
 ```
+
+Install `@types/chart.js` library from `npm`
+
+```bash
+npm install @types/chart.js --save-dev
+```
+
 ### Module usage
 
 Add `ChartjsModule` to module
