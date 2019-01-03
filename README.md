@@ -1,6 +1,6 @@
 <p align="center">
   <img height="200px" width="200px"  src="https://www.chartjs.org/img/chartjs-logo.svg">
-  <a href="http://synapsium.com">
+  <a href="https://synapsium.com">
     <h1 align="center">ngx-chartjs</h1>
   </a>
 </p>
